@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parTopLevelManagementGroupPrefix": {
+      "value": "alzkal"
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": ""
+    },
+    "parTopLevelPolicyAssignmentSovereigntyGlobal": {
+      "value": {
+        "parTopLevelSovereigntyGlobalPoliciesEnable": false,
+        "parListOfAllowedLocations": []
+      }
+    },
+    "parPlatformMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneChildrenMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneMgConfidentialEnable": {
+      "value": false
+    },
+    "parPolicyAssignmentSovereigntyConfidential": {
+      "value": {
+        "parAllowedResourceTypes": [],
+        "parListOfAllowedLocations": [],
+        "parAllowedVirtualMachineSKUs": []
+      }
+    },
+    "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
+      "value": "eastus2"
+    },
+    "parLogAnalyticsWorkspaceResourceId": {
+      "value": "/subscriptions/04b23413-3fdf-4a5c-bfce-16534db0213a/resourcegroups/rg-alzkal-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": "365"
+    },
+    "parAutomationAccountName": {
+      "value": "alz-automation-account"
+    },
+    "parMsDefenderForCloudEmailSecurityContact": {
+      "value": "kreda@hitachisolutions.com"
+    },
+    "parDdosProtectionPlanId": {
+      "value": "/subscriptions/04b23413-3fdf-4a5c-bfce-16534db0213a/resourceGroups/rg-alzkal-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+    },
+    "parPrivateDnsResourceGroupId": {
+      "value": "/subscriptions/04b23413-3fdf-4a5c-bfce-16534db0213a/resourceGroups/rg-alzkal-connectivity"
+    },
+    "parPrivateDnsZonesNamesToAuditInCorp": {
+      "value": []
+    },
+    "parDisableAlzDefaultPolicies": {
+      "value": false
+    },
+    "parVmBackupExclusionTagName": {
+      "value": ""
+    },
+    "parVmBackupExclusionTagValue": {
+      "value": []
+    },
+    "parExcludedPolicyAssignments": {
+      "value": []
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}
